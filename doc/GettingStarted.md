@@ -33,7 +33,7 @@ Edit `index.js` and modify onDeviceReady with the following code
         app.receivedEvent('deviceready');
         
         // Read NDEF formatted NFC Tags
-        nfc.addNdefListener (
+        nfc.addAesNdefListener (
             function (nfcEvent) {
                 var tag = nfcEvent.tag,
                     ndefMessage = tag.ndefMessage;
@@ -52,7 +52,8 @@ Edit `index.js` and modify onDeviceReady with the following code
             },
             function (error) { // error callback
                 alert("Error adding NDEF listener " + JSON.stringify(error));
-            }
+            },
+            "myEncryptionKey1"
         );
     },
         
