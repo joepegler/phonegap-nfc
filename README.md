@@ -18,7 +18,7 @@ onFailure: (Optional) The callback that is called if there was an error.
 myKey: (Optional) The encryption key used to decrypt the message.
 ```
 Description
-A ndef event is fired when a NDEF tag is read. ```localStorage('key') ``` is used to decrypt a message if 'myKey' is not set;
+A ndef event is fired when a NDEF tag is read. ```localStorage('key') ``` is used to decrypt a message if 'myKey' is not set.
 nfc.aesWrite
 ===============
 Writes an encrypted NDEF Message to an NFC tag using encryption key. 
