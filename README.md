@@ -4,8 +4,7 @@ cordova-nfc-aes
 An adaptation of an NFC PhoneGap library (https://github.com/chariotsolutions/phonegap-nfc) with AES encryption included.
 Two extra functions have been added:
 
-nfc.addAesNdefListener
-===============
+## H2 nfc.addAesNdefListener
 Registers an event listener for any NDEF tag. For use when the ndefMessage on the tag has been encrypted using aesWrite.
 ```javascript
 nfc.addNdefListener(callback, [onSuccess], [onFailure], [myKey]);
@@ -19,8 +18,7 @@ myKey: (Optional) The encryption key used to decrypt the message.
 ```
 Description
 A ndef event is fired when a NDEF tag is read. ```localStorage('key') ``` is used to decrypt a message if 'myKey' is not set.
-nfc.aesWrite
-===============
+## H2 nfc.aesWrite
 Writes an encrypted NDEF Message to an NFC tag using encryption key. 
 ```javascript
 var message = [
