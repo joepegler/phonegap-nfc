@@ -18,7 +18,7 @@ onFailure: (Optional) The callback that is called if there was an error.
 myKey: (Optional) The encryption key used to decrypt the message.
 ```
 Description
-A ndef event is fired when a NDEF tag is read. localStorage('key') is used to decrypt a message if 'myKey' is not set;
+A ndef event is fired when a NDEF tag is read. ```javascript localStorage('key') ``` is used to decrypt a message if 'myKey' is not set;
 nfc.aesWrite
 ===============
 Writes an encrypted NDEF Message to an NFC tag using encryption key. 
@@ -40,5 +40,5 @@ Description
 Function nfc.aesWrite writes an encrypted NdefMessage to an NFC tag.
 On Android this method must be called from within an NDEF Event Handler.
 If an encryption key is not provided localStorage('key') is used;
-localStorage('key') is set when the user first uses a custom 'myKey'.
+```javascript localStorage('key') ``` is set when the user first uses a custom 'myKey'.
 
