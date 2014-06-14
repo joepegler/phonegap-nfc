@@ -28,7 +28,7 @@ Supported Platforms
  
 # Installing
 
-**Cordova 3.1+ is the recommended way to use phonegap-nfc, see [Getting Started Cordova CLI](https://github.com/chariotsolutions/phonegap-nfc/blob/master/doc/GettingStartedCLI.md).**
+**Cordova 3.1+ is the recommended way to use phonegap-nfc, see [Getting Started Cordova CLI](https://github.com/joepegler/phonegap-nfc/blob/master/doc/GettingStartedCLI.md).**
 
 [INSTALL.md](INSTALL.md) has **older** instructions for installing the nfc-plugin into your PhoneGap project.
 
