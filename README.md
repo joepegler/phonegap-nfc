@@ -39,6 +39,6 @@ myKey: (Optional) The encryption key used to encrypt the message.
 Description
 Function nfc.aesWrite writes an encrypted NdefMessage to an NFC tag.
 On Android this method must be called from within an NDEF Event Handler.
-If an encryption key is not provided localStorage('key') is used.
+If an encryption key is not provided ```localStorage('key') ``` is used.
 ```localStorage('key') ``` is set when the user first uses a custom 'myKey'.
 
